@@ -14,7 +14,7 @@ import CreateEvent from "./components/createEvent/CreateEvent";
 import EventList from "./components/eventList/EventList";
 import IsUserRedirect from "./components/IsUserRedirect";
 import ProfilePage from "./components/Profile";
-axios.defaults.baseURL = "http://localhost:8000/";
+axios.defaults.baseURL = "https://mygreetapp14.herokuapp.com/";
 
 function App() {
   const initialState = {
