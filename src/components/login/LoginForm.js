@@ -56,16 +56,16 @@ export default function LoginForm({ setForgotPassword }) {
     }
   };
 
-  const authHandler = () => {
-    try {
-      axios.get("/auth/google", {
-        withCredentials: true,
-      });
-      console.log("hello");
-    } catch (error) {
-      console.log(error.message);
-    }
-  };
+  // const authHandler = () => {
+  //   try {
+  //     axios.get("/auth/google", {
+  //       withCredentials: true,
+  //     });
+  //     console.log("hello");
+  //   } catch (error) {
+  //     console.log(error.message);
+  //   }
+  // };
 
   const handleForgotPassword = async (e) => {
     e.preventDefault();
@@ -101,7 +101,7 @@ export default function LoginForm({ setForgotPassword }) {
   return (
     <div className="d-flex row g-0 mt-4">
       <div className="form_details col">
-        <div onClick={authHandler}>
+        {/* <div onClick={authHandler}>
           <button className="btn">
             Sign in with
             <img
@@ -110,7 +110,7 @@ export default function LoginForm({ setForgotPassword }) {
               className="img-fluid"
             />
           </button>
-        </div>
+        </div> */}
         <p className="separate">Sign in with Email</p>
         <form className="login-form" action="">
           <div className="form__group">
